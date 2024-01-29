@@ -1,0 +1,12 @@
+<div class="init fadeInDown" *ngIf="initApp">
+  <mat-card>
+    <mat-form-field>
+      <input matInput type="tel" placeholder="INGRESE SERVIDOR" [(ngModel)]="_sc.url" name="url">
+    </mat-form-field>
+    <div *ngIf="_sc.url.length > 7">
+      <h1>Usar como:</h1>
+      <button mat-raised-button color="primary" class="w-50" (click)="goTo('/inicio')">PANTALLA</button>
+      <button mat-button color="primary" class="w-50" (click)="goTo('/control')">CONTROL</button>
+    </div>
+  </mat-card>
+</div>

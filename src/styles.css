@@ -1,0 +1,63 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(100%) },
+  100% { opacity: 1; transform: none }
+}
+
+html, body { height: 864px; width: 100%; max-width: 1536px; background: #111; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#display {
+  background: #000;
+  width: 100%;
+  height: 700px;
+}
+.w-100{
+  width: 100%;
+}
+.w-70{
+  width: 70%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-25 {
+  width: 25%;
+}
+.pt3{
+  padding-top: 30px;
+}
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+.col-md-auto {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 26%;
+  max-width: none;
+}
+.init {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #222;
+}
+.init mat-card {
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInDown 0.3s;
+  max-width: 800px;
+}
+select {
+  padding: 16px;
+  background: none;
+  border-radius: 3px;
+}

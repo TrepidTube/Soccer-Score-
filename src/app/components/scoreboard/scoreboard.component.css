@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:700';
+div {
+  font-size: 25px;
+  font-family: Roboto Condensed;
+  color: #eee
+}
+
+#board {
+  width: 864px;
+  height: 1536px;
+  border: solid 1px
+}
+
+#display {
+  background: #111;
+  width: 1536px;
+  height: 700px;
+}
+
+h1 {
+  margin: 2px 0 0 0;
+  letter-spacing: 3px;
+  font-size: 40px
+}
+#LH{
+  padding-right: 25px;
+}
+#RG{
+  padding-left: 25px;
+}
+
+
+#score {
+  padding: 0 24px;
+  margin: 5px;
+  max-width: 100%;
+  height: 152px;
+  background: #004891;
+  border-radius: 15px;
+  border: solid 2px #fff
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.row {
+  display: flex;
+  margin-top: 20px;
+}
+.lower {
+  align-self: end;
+}
+
+.num {
+  display: inline-block;
+  background: #111;
+  width: 58px;
+  height: 60px;
+  font-size: 45px !important;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.center-logo{
+  margin-right: -15px;
+  margin-bottom: -50px;
+}
+
+.dtext {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+
+.num.sc {
+  width: 80px;
+}
+
+.home {
+  text-align: center;
+}
+
+.timer {
+  text-align: center;
+  display: inline-block;
+  width: 401px;
+  text-align: -webkit-center;
+}
+
+.counter { 
+  margin-top: -20px;
+  background: #111;
+  width: 400px;
+  height: 100px;
+  border: solid 2px #eee;
+  border-radius: 0 0 30px 30px;
+  font-size: 90px;
+}
+
+.tol span {
+  display: block;
+}
+
+.down {
+  margin: 0 0 0 20px;
+  text-align: center;
+  align-self: end;
+}
+
+.down span {
+  display: block
+}
+
+.row:nth-child(2) {
+  padding: 5px 0;
+}
+
+.logo {
+  margin-top: -5px;
+  height: 100px;
+  width: auto;
+  align-self: center;
+}
+
+.time {
+  margin: -110px 340px 0 0;
+}
